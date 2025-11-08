@@ -57,7 +57,7 @@ io.on("connection", (socket) => {
 const PORT = process.env.PORT || 3000;
 connectDB(
   process.env.MONGO_URI ||
-    "mongodb+srv://harshplay10_db_user:F7ALVpjOBfzBPw9B@cluster0.ahacxdt.mongodb.net/multi_vendor_inventory"
+    "your_mongo_db_url"
 )
   .then(() => {
     server.listen(PORT, () => {
